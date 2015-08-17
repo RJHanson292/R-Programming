@@ -71,5 +71,5 @@ if(weekdays(date) %in% c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 edited.activity$date <- as.Date(edited.activity$date)
 edited.activity$weekday <- sapply(edited.activity$date, FUN = weekdayfunction)
 daily.steps2 <- tapply(edited.activity$steps, edited.activity$date, FUN = sum, na.rm = TRUE)
-averageweekday <- aggregate(edited.activity, FUN = mean, x = edited.activity$steps, by = list(edited.activity$Weekday) + list(edited.activity$intervals))
+##averageweekday <- aggregate(edited.activity, FUN = mean, x = edited.activity$steps, by = list(edited.activity$Weekday) + list(edited.activity$intervals))
 ```
