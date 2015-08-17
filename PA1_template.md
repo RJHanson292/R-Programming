@@ -89,6 +89,7 @@ plot(x = dates, y = daily.steps, type = "h")
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+Figures can be found in the figures folder (number in the order they would appear here). They will not show up here for me for some reason.
 
 ```r
 mean(daily.steps)
